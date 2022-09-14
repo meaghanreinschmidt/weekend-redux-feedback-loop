@@ -45,5 +45,5 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 ## Project Checklist
 
 - [X] Set up base README
-- [ ] `npm install`, `npm run server`, `npm run client`
-- [ ] 
+- [X] `npm install`, `npm run server`, `npm run client`
+- [X] Create database and add tables from data.sql 
