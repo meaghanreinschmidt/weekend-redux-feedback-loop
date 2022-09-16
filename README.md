@@ -52,3 +52,4 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Add express route in server.js
 - [X] Create redux store in index.js
 - [X] Add FeedbackLog that houses axios requests
+- [X] Map through FeedbackLog and create FeedbackItem
