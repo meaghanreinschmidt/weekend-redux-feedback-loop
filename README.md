@@ -60,8 +60,8 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Save feeling in reducer and click 'Next'
 - [X] Create step 2 and navigate on click 'Next'
 - [X] Create a reducer for understanding
-- [ ] Save understanding in reducer on click 'Next'
-- [ ] Create step 3 and navigate on click 'Next'
+- [X] Save understanding in reducer on click 'Next'
+- [X] Create step 3 and navigate on click 'Next'
 - [ ] Create a reducer for support
 - [ ] Save support in reducer on click 'Next'
 - [ ] Create a reducer for comments
