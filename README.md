@@ -54,6 +54,5 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Create redux store in index.js
 - [X] Add FeedbackLog that houses axios requests
 - [X] Map through FeedbackLog and create FeedbackItem
-- 
-- [ ] Create Header component 
+- [X] Create Header component 
 - [ ] Create Progress Bar component
