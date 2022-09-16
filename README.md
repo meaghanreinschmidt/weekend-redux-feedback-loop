@@ -49,4 +49,4 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Create database and add tables from data.sql 
 - [X] Add router.js into server
 - [X] Create `GET` and `POST` routes in router
-- [ ] 
+- [X] Add express route in server.js
