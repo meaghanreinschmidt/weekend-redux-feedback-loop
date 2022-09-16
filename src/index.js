@@ -19,12 +19,25 @@ const feeling = (state = '', action) => {
     return state;
 }
 
+// understanding reducer
+const understanding = (state = '', action) => {
+    if (action.type === 'SET_UNDERSTANDING') {
+        // dispatch will have type of 'SET_UNDERSTANDING'
+        // and payload with the value to set
+        return action.payload;
+    } else if (action.type === 'CLEAR_ALL') {
+        return '';
+    }
+    return state;
+}
+
 // Redux store! Keeps track of all reducers
 const storeInstance = createStore(
     // reducers go here
     combineReducers(
         {
             feeling,
+            understanding,
         }
     ),
     applyMiddleware(logger)
