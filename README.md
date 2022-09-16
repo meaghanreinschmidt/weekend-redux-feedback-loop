@@ -51,4 +51,4 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Create `GET` and `POST` routes in router
 - [X] Add express route in server.js
 - [X] Create redux store in index.js
-- [ ] 
+- [X] Add FeedbackLog that houses axios requests
