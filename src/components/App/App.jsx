@@ -5,6 +5,7 @@ import StepOne from '../StepOne/StepOne.jsx';
 import StepTwo from '../StepTwo/StepTwo.jsx';
 import StepThree from '../StepThree/StepThree.jsx';
 import StepFour from '../StepFour/StepFour.jsx';
+import ReviewPage from '../ReviewPage/ReviewPage.jsx';
 import FeedbackLog from '../FeedbackLog/FeedbackLog.jsx';
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
               </Route>
               <Route exact path="/step/four">
                   <StepFour />
+              </Route>
+              <Route exact path="/review/page">
+                  <ReviewPage />
               </Route>
           </div>
       </Router>

@@ -67,5 +67,5 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Create a reducer for comments
 - [X] Save comments in reducer on click 'Next'
 - [X] Create review page and navigate on click 'Next'
-- [ ] Display feeling, understanding, support, and comments on the review page
-- [ ] POST to server on click 'Submit' from review page
+- [X] Display feeling, understanding, support, and comments on the review page
+- [X] POST to server on click 'Submit' from review page
