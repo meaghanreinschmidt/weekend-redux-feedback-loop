@@ -7,13 +7,24 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 import registerServiceWorker from './registerServiceWorker';
 
+// feeling reducer
+const feeling = (state = '', action) => {
+    if (action.type === 'SET_FEELING') {
+        // dispatch will have type of 'SET_FEELING'
+        // and payload with the value to set
+        return action.payload;
+    } else if (action.type === 'CLEAR_ALL') {
+        return '';
+    }
+    return state;
+}
 
 // Redux store! Keeps track of all reducers
 const storeInstance = createStore(
     // reducers go here
     combineReducers(
         {
-
+            feeling,
         }
     ),
     applyMiddleware(logger)
