@@ -46,6 +46,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 
 - [X] Set up base README
 - [X] `npm install`, `npm run server`, `npm run client`
+- [X] Install Redux and Redux Logger
 - [X] Create database and add tables from data.sql 
 - [X] Add router.js into server
 - [X] Create `GET` and `POST` routes in router
@@ -53,3 +54,6 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Create redux store in index.js
 - [X] Add FeedbackLog that houses axios requests
 - [X] Map through FeedbackLog and create FeedbackItem
+- 
+- [ ] Create Header component 
+- [ ] Create Progress Bar component
