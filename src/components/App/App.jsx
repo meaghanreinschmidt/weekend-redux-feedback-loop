@@ -14,7 +14,6 @@ function App() {
     <div className='App'>
       <Router>
           <Header />
-          <br />
           <div>
               <Route exact path="/admin">
                   <FeedbackLog />
