@@ -62,10 +62,10 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Create a reducer for understanding
 - [X] Save understanding in reducer on click 'Next'
 - [X] Create step 3 and navigate on click 'Next'
-- [ ] Create a reducer for support
-- [ ] Save support in reducer on click 'Next'
-- [ ] Create a reducer for comments
-- [ ] Save comments in reducer on click 'Next'
-- [ ] Create review page and navigate on click 'Next'
+- [X] Create a reducer for support
+- [X] Save support in reducer on click 'Next'
+- [X] Create a reducer for comments
+- [X] Save comments in reducer on click 'Next'
+- [X] Create review page and navigate on click 'Next'
 - [ ] Display feeling, understanding, support, and comments on the review page
 - [ ] POST to server on click 'Submit' from review page

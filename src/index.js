@@ -31,6 +31,30 @@ const understanding = (state = '', action) => {
     return state;
 }
 
+// support reducer
+const support = (state = '', action) => {
+    if (action.type === 'SET_SUPPORT') {
+        // dispatch will have type of 'SET_SUPPORT'
+        // and payload with the value to set
+        return action.payload;
+    } else if (action.type === 'CLEAR_ALL') {
+        return '';
+    }
+    return state;
+}
+
+// comments reducer
+const comments = (state = '', action) => {
+    if (action.type === 'SET_COMMENTS') {
+        // dispatch will have type of 'SET_COMMENTS'
+        // and payload with the value to set
+        return action.payload;
+    } else if (action.type === 'CLEAR_ALL') {
+        return '';
+    }
+    return state;
+}
+
 // Redux store! Keeps track of all reducers
 const storeInstance = createStore(
     // reducers go here
@@ -38,6 +62,8 @@ const storeInstance = createStore(
         {
             feeling,
             understanding,
+            support,
+            comments
         }
     ),
     applyMiddleware(logger)

@@ -3,6 +3,8 @@ import './App.css';
 import Header from '../Header/Header.jsx';
 import StepOne from '../StepOne/StepOne.jsx';
 import StepTwo from '../StepTwo/StepTwo.jsx';
+import StepThree from '../StepThree/StepThree.jsx';
+import StepFour from '../StepFour/StepFour.jsx';
 import FeedbackLog from '../FeedbackLog/FeedbackLog.jsx';
 
 function App() {
@@ -21,6 +23,12 @@ function App() {
               </Route>
               <Route exact path="/step/two">
                   <StepTwo />
+              </Route>
+              <Route exact path="/step/three">
+                  <StepThree />
+              </Route>
+              <Route exact path="/step/four">
+                  <StepFour />
               </Route>
           </div>
       </Router>
