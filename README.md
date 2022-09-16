@@ -57,7 +57,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Create Header component 
 - [X] Create Progress Bar component
 - [X] Create a reducer for feeling
-- [ ] Save feeling in reducer and click 'Next'
+- [X] Save feeling in reducer and click 'Next'
 - [ ] Create step 2 and navigate on click 'Next'
 - [ ] Create a reducer for understanding
 - [ ] Save understanding in reducer on click 'Next'
