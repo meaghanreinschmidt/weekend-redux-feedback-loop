@@ -25,7 +25,7 @@ const ReviewPage = () => {
             // Clear all reducers
             dispatch({ type: 'CLEAR_ALL' });
             // Navigate to Step One
-            history.push('/');
+            history.push('/success');
         }).catch((error) => {
             console.log(error);
             alert('Something went wrong!');

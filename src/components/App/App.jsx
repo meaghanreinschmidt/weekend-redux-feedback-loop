@@ -6,6 +6,7 @@ import Understanding from '../Understanding/Understanding.jsx';
 import Support from '../Support/Support.jsx';
 import Comments from '../Comments/Comments.jsx';
 import ReviewPage from '../ReviewPage/ReviewPage.jsx';
+import Success from '../Success/Success.jsx';
 import FeedbackLog from '../FeedbackLog/FeedbackLog.jsx';
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
               </Route>
               <Route exact path="/review/page">
                   <ReviewPage />
+              </Route>
+              <Route exact path="/success">
+                  <Success />
               </Route>
           </div>
       </Router>

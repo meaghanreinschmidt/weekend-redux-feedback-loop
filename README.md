@@ -71,3 +71,5 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] POST to server on click 'Submit' from review page
 - [X] Add Admin link to Header
 - [X] Add Input Validation to Steps 
+- [X] Create success page with button to redirect to beginning
+- [ ] 
