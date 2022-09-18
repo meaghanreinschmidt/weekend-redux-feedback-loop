@@ -2,7 +2,7 @@ import ProgressBar from "../ProgressBar/ProgressBar";
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
-const StepFour = () => {
+const Comments = () => {
     const history = useHistory();
     // useSelector & useDispatch
     const comments = useSelector(store => store.comments);
@@ -24,4 +24,4 @@ const StepFour = () => {
     );
 }
 
-export default StepFour;
+export default Comments;

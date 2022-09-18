@@ -2,7 +2,7 @@ import ProgressBar from '../ProgressBar/ProgressBar';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
-const StepTwo = () => {
+const Understanding = () => {
     const history = useHistory();
     // useSelector & useDispatch
     const understanding = useSelector(store => store.understanding);
@@ -19,11 +19,11 @@ const handleChange = (event) => {
             <h3>How well are you understanding the content?</h3>
             <div>
                 {/* getter & setter */}
-                <input value={understanding} onChange={handleChange} className="input" type="number" />
-                <button onClick={() => history.push('/step/three')} className="button">Next</button>
+                <input value={understanding} onChange={handleChange} className="input" type="number" required min="1" max="5" error={understanding < 1 | understanding > 6 ? true : false} />
+                <button onClick={() => history.push('/support')} className="button" disabled={understanding > 0 && understanding < 6 ? false : true}>Next</button>
             </div>
         </>
     );
 }
 
-export default StepTwo;
+export default Understanding;
