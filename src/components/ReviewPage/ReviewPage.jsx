@@ -34,6 +34,7 @@ const ReviewPage = () => {
 
     return (
         <>
+            <button onClick={() => history.push('/comments')} className="button">Previous</button>
             <ProgressBar step={5} />
             <h3>Review and Submit</h3>
             <div>

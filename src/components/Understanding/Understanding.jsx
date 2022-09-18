@@ -15,6 +15,7 @@ const handleChange = (event) => {
 
     return (
         <>
+            <button onClick={() => history.push('/feeling')} className="button">Previous</button>
             <ProgressBar step={2} />
             <h3>How well are you understanding the content?</h3>
             <div>
