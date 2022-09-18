@@ -4,6 +4,8 @@
 
 *Duration: 2 Weeks*
 
+Visit http://localhost:3000/#/admin to view all previous submissions. 
+
 [Deployed version of app here] INSERT WEB ADDRESS
 
 ## Screenshot
@@ -72,4 +74,10 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Add Admin link to Header
 - [X] Add Input Validation to Steps 
 - [X] Create success page with button to redirect to beginning
-- [ ] 
+- [X] Add opening page 
+
+Stretch Goals
+- [ ] Add back buttons so the user can change score
+- [ ] Add Material UI
+- [ ] Edit Admin Section with delete button and flag button
+- [ ] Deploy to Heroku

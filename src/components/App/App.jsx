@@ -1,6 +1,7 @@
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 import Header from '../Header/Header.jsx';
+import Start from '../Start/Start.jsx';
 import Feeling from '../Feeling/Feeling.jsx';
 import Understanding from '../Understanding/Understanding.jsx';
 import Support from '../Support/Support.jsx';
@@ -20,6 +21,9 @@ function App() {
                   <FeedbackLog />
               </Route>
               <Route exact path="/">
+                  <Start />
+              </Route>
+              <Route exact path="/feeling">
                   <Feeling />
               </Route>
               <Route exact path="/understanding">
