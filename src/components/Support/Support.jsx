@@ -14,6 +14,7 @@ const Support = () => {
 
     return (
         <>
+            <button onClick={() => history.push('/understanding')} className="button">Previous</button>
             <ProgressBar step={3} />
             <h3>How well are you being supported?</h3>
             <div>

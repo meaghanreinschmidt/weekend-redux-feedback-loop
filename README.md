@@ -77,7 +77,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Add opening page 
 
 Stretch Goals
-- [ ] Add back buttons so the user can change score
+- [X] Add back buttons so the user can change score
 - [ ] Add Material UI
 - [ ] Edit Admin Section with delete button and flag button
 - [ ] Deploy to Heroku

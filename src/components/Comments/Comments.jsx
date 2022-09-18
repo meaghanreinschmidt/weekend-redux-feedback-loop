@@ -14,6 +14,7 @@ const Comments = () => {
 
     return (
         <>
+            <button onClick={() => history.push('/support')} className="button">Previous</button>
             <ProgressBar step={4} />
             <h3>Any comments you want to leave?</h3>
             <div>
