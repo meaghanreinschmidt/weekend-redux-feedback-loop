@@ -45,20 +45,20 @@ function FeedbackLog() {
     };
 
     // axios PUT request NOT FUNCTIONAL YET
-//    function flagFeedback(feedbackId, flagged) {
-//         axios({
-//             method: 'PUT',
-//             url: `/feedback/flagged/${feedbackId}`,
-//             data: {
-//                 flagged: flagged,
-//             }
-//         }).then((response) => {
-//             getFeedback();
-//         }).catch((error) => {
-//             console.log(error);
-//             alert('Something went wrong!');
-//         });
-//     };
+    //    function flagFeedback(feedbackId, flagged) {
+    //         axios({
+    //             method: 'PUT',
+    //             url: `/feedback/flagged/${feedbackId}`,
+    //             data: {
+    //                 flagged: flagged,
+    //             }
+    //         }).then((response) => {
+    //             getFeedback();
+    //         }).catch((error) => {
+    //             console.log(error);
+    //             alert('Something went wrong!');
+    //         });
+    //     };
 
     return (
         <Box sx={{ p: 2, border: '3px solid black' }}>

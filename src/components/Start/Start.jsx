@@ -8,21 +8,21 @@ import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 
 const Start = () => {
-    const history =  useHistory();
+    const history = useHistory();
 
     return (
         <Box className="start-box">
-        <Card sx={{minWidth: 275, maxWidth: 350}} className="start-card" variant="outlined">
-            <CardContent>
-            <Typography variant="h5" component="div">Let us know how you are doing!</Typography>
-            <CardActions className="card-button">
-                <Button onClick={() => history.push('/feeling')} className="button">Start</Button>
-            </CardActions>
-            </CardContent>
-        </Card>
+            <Card sx={{ minWidth: 275, maxWidth: 350 }} className="start-card" variant="outlined">
+                <CardContent>
+                    <Typography variant="h5" component="div">Let us know how you are doing!</Typography>
+                    <CardActions className="card-button">
+                        <Button onClick={() => history.push('/feeling')} className="button">Start</Button>
+                    </CardActions>
+                </CardContent>
+            </Card>
         </Box>
-        
-        
+
+
     )
 }
 

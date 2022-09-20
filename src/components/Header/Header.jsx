@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+    // location for conditional and styling
     const location = useLocation();
     return (
         <>

@@ -14,55 +14,55 @@ import Grid from '@mui/material/Grid';
 
 function App() {
 
-  return (
-    <div className='App'>
-      <Router>
-          <Header />
-          <div>
-            <Grid container justifyContent="center">
-              <Route exact path="/admin">
-                  <FeedbackLog />
-              </Route>
-              </Grid>
-              <Grid container justifyContent="center">
-              <Route exact path="/">
-                  <Start />
-              </Route>
-              </Grid>
-              <Grid container justifyContent="center">
-              <Route exact path="/feeling">
-                  <Feeling />
-              </Route>
-              </Grid>
-              <Grid container justifyContent="center">
-              <Route exact path="/understanding">
-                  <Understanding />
-              </Route>
-              </Grid>
-              <Grid container justifyContent="center">
-              <Route exact path="/support">
-                  <Support />
-              </Route>
-              </Grid>
-              <Grid container justifyContent="center">
-              <Route exact path="/comments">
-                  <Comments />
-              </Route>
-              </Grid>
-              <Grid container justifyContent="center">
-              <Route exact path="/review/page">
-                  <ReviewPage />
-              </Route>
-              </Grid>
-              <Grid container justifyContent="center">
-              <Route exact path="/success">
-                  <Success />
-              </Route>
-              </Grid>
-          </div>
-      </Router>
-    </div>
-  );
+    return (
+        <div className='App'>
+            <Router>
+                <Header />
+                <div>
+                    <Grid container justifyContent="center">
+                        <Route exact path="/admin">
+                            <FeedbackLog />
+                        </Route>
+                    </Grid>
+                    <Grid container justifyContent="center">
+                        <Route exact path="/">
+                            <Start />
+                        </Route>
+                    </Grid>
+                    <Grid container justifyContent="center">
+                        <Route exact path="/feeling">
+                            <Feeling />
+                        </Route>
+                    </Grid>
+                    <Grid container justifyContent="center">
+                        <Route exact path="/understanding">
+                            <Understanding />
+                        </Route>
+                    </Grid>
+                    <Grid container justifyContent="center">
+                        <Route exact path="/support">
+                            <Support />
+                        </Route>
+                    </Grid>
+                    <Grid container justifyContent="center">
+                        <Route exact path="/comments">
+                            <Comments />
+                        </Route>
+                    </Grid>
+                    <Grid container justifyContent="center">
+                        <Route exact path="/review/page">
+                            <ReviewPage />
+                        </Route>
+                    </Grid>
+                    <Grid container justifyContent="center">
+                        <Route exact path="/success">
+                            <Success />
+                        </Route>
+                    </Grid>
+                </div>
+            </Router>
+        </div>
+    );
 }
 
 export default App;

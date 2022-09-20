@@ -1,7 +1,6 @@
 import ProgressBar from '../ProgressBar/ProgressBar.jsx';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import './Feeling.css';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -29,11 +28,11 @@ const Feeling = () => {
         <>
             <ProgressBar step={1} />
             <Box className="feeling-box">
-            <br />
+                <br />
                 <Card sx={{ minWidth: 275, maxWidth: 350 }} className="feeling-card" variant="outlined">
                     <br />
                     <CardContent>
-                        
+
                         <br />
                         <Typography variant="h5" component="div">How are you feeling today?</Typography>
                         <CardActions className="card-button">

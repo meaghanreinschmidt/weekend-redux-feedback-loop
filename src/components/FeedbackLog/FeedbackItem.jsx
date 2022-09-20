@@ -11,13 +11,13 @@ import DialogActions from '@mui/material/DialogActions';
 
 
 const FeedbackItem = ({ feedback, deleteItem }) => {
-
+    // These variables are for the Dialog box functionality
     const [open, setOpen] = useState(false);
-
+    // Dialog Box appears on delete button click
     const handleClickOpen = () => {
         setOpen(true);
     };
-
+    // Dialog Box closes on click
     const handleClose = () => {
         setOpen(false);
     };
@@ -32,23 +32,23 @@ const FeedbackItem = ({ feedback, deleteItem }) => {
                 <Button onClick={handleClickOpen}>
                     <DeleteOutlineIcon color="error"></DeleteOutlineIcon>
                 </Button>
-                <Dialog 
+                <Dialog
                     open={open}
                     onClose={handleClose}
                     aria-labelledby="alert-dialog-title"
                     aria-describedby="alert-dialog-description">
-                        <DialogTitle id="alert-dialog-title">
-                            {"Are you sure?"}
-                        </DialogTitle>
-                        <DialogContent>
-                            <DialogContentText id="alert-dialog-description">
-                                Deleting this item cannot be undone.
-                            </DialogContentText>
-                        </DialogContent>
-                        <DialogActions>
-                            <Button onClick={handleClose}>Cancel</Button>
-                            <Button color="error" onClick={() => deleteItem(feedback.id)}>Delete</Button>
-                        </DialogActions>
+                    <DialogTitle id="alert-dialog-title">
+                        {"Are you sure?"}
+                    </DialogTitle>
+                    <DialogContent>
+                        <DialogContentText id="alert-dialog-description">
+                            Deleting this item cannot be undone.
+                        </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                        <Button onClick={handleClose}>Cancel</Button>
+                        <Button color="error" onClick={() => deleteItem(feedback.id)}>Delete</Button>
+                    </DialogActions>
                 </Dialog>
             </TableCell>
         </>

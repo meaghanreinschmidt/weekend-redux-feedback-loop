@@ -17,6 +17,7 @@ const ReviewPage = () => {
     const dispatch = useDispatch();
     const history = useHistory();
 
+    // axios POST
     const submitFeedback = () => {
         axios({
             method: 'POST',
@@ -40,30 +41,30 @@ const ReviewPage = () => {
 
     return (
         <>
-        <ProgressBar step={5} />
-        <Box className="review-box">
-            <br />
-            <Card sx={{ minWidth: 275, maxWidth: 350 }} className="review-card" variant="outlined">
+            <ProgressBar step={5} />
+            <Box className="review-box">
                 <br />
-                <CardContent>
-                    <Button onClick={() => history.push('/comments')} className="button">Previous</Button>
+                <Card sx={{ minWidth: 275, maxWidth: 350 }} className="review-card" variant="outlined">
                     <br />
-                    <Typography variant="h5" component="div">Review and Submit</Typography>
-                    <br />
-                    <div>
+                    <CardContent>
+                        <Button onClick={() => history.push('/comments')} className="button">Previous</Button>
+                        <br />
+                        <Typography variant="h5" component="div">Review and Submit</Typography>
+                        <br />
                         <div>
-                            <Typography>Feeling: {feeling}</Typography>
-                            <Typography>Understanding: {understanding}</Typography>
-                            <Typography>Support: {support}</Typography>
-                            <Typography>Comments: {comments}</Typography>
+                            <div>
+                                <Typography>Feeling: {feeling}</Typography>
+                                <Typography>Understanding: {understanding}</Typography>
+                                <Typography>Support: {support}</Typography>
+                                <Typography>Comments: {comments}</Typography>
+                            </div>
+                            <CardActions style={{ justifyContent: 'center' }}>
+                                <Button onClick={submitFeedback} className="button">Submit</Button>
+                            </CardActions>
                         </div>
-                        <CardActions style={{ justifyContent: 'center' }}>
-                            <Button onClick={submitFeedback} className="button">Submit</Button>
-                        </CardActions>
-                    </div>
-                </CardContent>
-            </Card>
-        </Box>
+                    </CardContent>
+                </Card>
+            </Box>
         </>
     )
 }
