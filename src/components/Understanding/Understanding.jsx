@@ -22,11 +22,13 @@ const Understanding = () => {
     }
 
     return (
+        <>
+        <ProgressBar step={2} />
         <Box className="understanding-box">
+            <br />
             <Card sx={{ minWidth: 275, maxWidth: 350 }} className="understanding-card" variant="outlined">
                 <br />
                 <CardContent>
-                    <ProgressBar step={2} />
                     <Button onClick={() => history.push('/feeling')} className="button">Previous Step</Button>
                     <br />
                     <Typography variant="h5" component="div">How well are you understanding the content?</Typography>
@@ -40,6 +42,7 @@ const Understanding = () => {
                 </CardContent>
             </Card>
         </Box>
+        </>
     );
 }
 

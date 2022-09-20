@@ -27,11 +27,13 @@ const Feeling = () => {
 
     return (
         <>
+            <ProgressBar step={1} />
             <Box className="feeling-box">
+            <br />
                 <Card sx={{ minWidth: 275, maxWidth: 350 }} className="feeling-card" variant="outlined">
                     <br />
                     <CardContent>
-                        <ProgressBar step={1} />
+                        
                         <br />
                         <Typography variant="h5" component="div">How are you feeling today?</Typography>
                         <CardActions className="card-button">

@@ -21,11 +21,14 @@ const Comments = () => {
     }
 
     return (
+        <>
+        <ProgressBar step={4} />
         <Box className="comments-box">
+            <br />
             <Card sx={{ minWidth: 275, maxWidth: 350 }} className="comments-card" variant="outlined">
                 <br />
                 <CardContent>
-                    <ProgressBar step={4} />
+                    
                     <Button onClick={() => history.push('/support')} className="button">Previous</Button>
                     <br />
                     <Typography variant="h5" component="div">Any comments you want to leave?</Typography>
@@ -37,6 +40,7 @@ const Comments = () => {
                 </CardContent>
             </Card>
         </Box>
+        </>
     );
 }
 

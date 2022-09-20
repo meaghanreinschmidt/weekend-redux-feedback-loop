@@ -7,7 +7,7 @@ const Header = () => {
         <>
             <header className="App-header">
                 <h1 className="App-title">Feedback!</h1>
-                </header>
+            </header>
             <ul>
                 <li>
                     <Link to="/admin" className={location.pathname === '/admin' ? 'active' : undefined}>
@@ -20,7 +20,7 @@ const Header = () => {
                     </Link>
                 </li>
             </ul>
-            
+
             <br />
         </>
     );

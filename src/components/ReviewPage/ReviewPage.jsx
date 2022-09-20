@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
+import ProgressBar from "../ProgressBar/ProgressBar";
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -39,7 +39,10 @@ const ReviewPage = () => {
     }
 
     return (
+        <>
+        <ProgressBar step={5} />
         <Box className="review-box">
+            <br />
             <Card sx={{ minWidth: 275, maxWidth: 350 }} className="review-card" variant="outlined">
                 <br />
                 <CardContent>
@@ -61,6 +64,7 @@ const ReviewPage = () => {
                 </CardContent>
             </Card>
         </Box>
+        </>
     )
 }
 
