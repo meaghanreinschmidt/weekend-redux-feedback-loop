@@ -2,6 +2,13 @@ import ProgressBar from '../ProgressBar/ProgressBar';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import CardActions from '@mui/material/CardActions';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 const ReviewPage = () => {
     const feeling =  useSelector(store => store.feeling);
@@ -33,20 +40,28 @@ const ReviewPage = () => {
     }
 
     return (
-        <>
-            <button onClick={() => history.push('/comments')} className="button">Previous</button>
-            <ProgressBar step={5} />
-            <h3>Review and Submit</h3>
+        <Box className="review-box">
+            <Card sx={{ minWidth: 275, maxWidth: 350 }} className="review-card" variant="outlined">
+                <br />
+                <CardContent>
+            <Button onClick={() => history.push('/comments')} className="button">Previous</Button>
+            <br />
+            <Typography variant="h5" component="div">Review and Submit</Typography>
+            <br />
             <div>
                 <div>
-                    <h4>Feeling: {feeling}</h4>
-                    <h4>Understanding: {understanding}</h4>
-                    <h4>Support: {support}</h4>
-                    <h4>Comments: {comments}</h4>
+                    <Typography>Feeling: {feeling}</Typography>
+                    <Typography>Understanding: {understanding}</Typography>
+                    <Typography>Support: {support}</Typography>
+                    <Typography>Comments: {comments}</Typography>
                 </div>
-                <button onClick={submitFeedback} className="button">Submit</button>
+                <CardActions style={{justifyContent: 'center'}}>
+                <Button onClick={submitFeedback} className="button">Submit</Button>
+                </CardActions>
             </div>
-        </>
+            </CardContent>
+            </Card>
+        </Box>
     )
 }
 
