@@ -1,6 +1,26 @@
+import { useState } from 'react';
 import TableCell from '@mui/material/TableCell';
+import Button from '@mui/material/Button';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import Dialog from '@mui/material/Dialog';
+import DialogTitle from '@mui/material/DialogTitle';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogActions from '@mui/material/DialogActions';
 
-const FeedbackItem = ({ feedback }) => {
+
+
+const FeedbackItem = ({ feedback, deleteItem }) => {
+
+    const [open, setOpen] = useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     return (
         <>
@@ -8,6 +28,29 @@ const FeedbackItem = ({ feedback }) => {
             <TableCell>{feedback.understanding}</TableCell>
             <TableCell>{feedback.support}</TableCell>
             <TableCell>{feedback.comments}</TableCell>
+            <TableCell>
+                <Button onClick={handleClickOpen}>
+                    <DeleteOutlineIcon color="error"></DeleteOutlineIcon>
+                </Button>
+                <Dialog 
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="alert-dialog-title"
+                    aria-describedby="alert-dialog-description">
+                        <DialogTitle id="alert-dialog-title">
+                            {"Are you sure?"}
+                        </DialogTitle>
+                        <DialogContent>
+                            <DialogContentText id="alert-dialog-description">
+                                Deleting this item cannot be undone.
+                            </DialogContentText>
+                        </DialogContent>
+                        <DialogActions>
+                            <Button onClick={handleClose}>Cancel</Button>
+                            <Button color="error" onClick={() => deleteItem(feedback.id)}>Delete</Button>
+                        </DialogActions>
+                </Dialog>
+            </TableCell>
         </>
     );
 }

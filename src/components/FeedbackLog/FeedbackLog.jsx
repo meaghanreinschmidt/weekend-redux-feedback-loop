@@ -31,6 +31,35 @@ function FeedbackLog() {
         });
     };
 
+    // axios DELETE request
+    const deleteItem = (feedbackId) => {
+        axios({
+            method: 'DELETE',
+            url: `/feedback/${feedbackId}`
+        }).then((response) => {
+            getFeedback();
+        }).catch((error) => {
+            console.log(error);
+            alert('Something went wrong!');
+        });
+    };
+
+    // axios PUT request NOT FUNCTIONAL YET
+//    function flagFeedback(feedbackId, flagged) {
+//         axios({
+//             method: 'PUT',
+//             url: `/feedback/flagged/${feedbackId}`,
+//             data: {
+//                 flagged: flagged,
+//             }
+//         }).then((response) => {
+//             getFeedback();
+//         }).catch((error) => {
+//             console.log(error);
+//             alert('Something went wrong!');
+//         });
+//     };
+
     return (
         <Box sx={{ p: 2, border: '3px solid black' }}>
             <TableContainer>
@@ -41,13 +70,14 @@ function FeedbackLog() {
                             <TableCell>Comprehension</TableCell>
                             <TableCell>Support</TableCell>
                             <TableCell>Comments</TableCell>
+                            <TableCell>Actions</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
                         {
                             feedbackList.map(item => (
                                 <TableRow key={item.id} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                                    <FeedbackItem key={item.id} feedback={item} />
+                                    <FeedbackItem key={item.id} feedback={item} deleteItem={deleteItem} />
                                 </TableRow>
                             ))
                         }
